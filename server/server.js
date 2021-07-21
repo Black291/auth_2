@@ -6,7 +6,8 @@ const cookieParser = require('cookie-parser')
 const app = express();
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/auth')
+// mongoose.connect('mongodb://localhost:27017/auth')
+mongoose.connect('mongodb+srv://tayoblack77:tayoBlack77!@cluster0.7bevp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority' || 'mongodb://localhost:27017/auth')
 
 const {User} = require('./models/user');
 // app.use(bodyParser.urlencoded({ extended: true }));
